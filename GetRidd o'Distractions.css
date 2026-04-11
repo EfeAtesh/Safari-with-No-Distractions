@@ -1,33 +1,28 @@
-/* --- YOUTUBE THUMBNAILS (USING YOUR NEW VIEWMODEL CLASSES) --- */
-/* This blurs the new layout containers you found */
-.ytThumbnailViewModelHost {
-    -webkit-filter: blur(11px) !important;
-    filter: blur(11px) !important;
+/* --- REDDIT NUKER (Scoped to Reddit only) --- */
+@-moz-document domain("reddit.com") {
+    shreddit-feed, 
+    #main-content, 
+    .ListingLayout-outerContainer, 
+    #siteTable {
+        display: none !important;
+    }
 }
 
-/* Fallback for the video player end-screens and older pages */
-ytd-thumbnail,
-ytd-playlist-thumbnail,
-.ytp-videowall-still {
-    -webkit-filter: blur(11px) !important;
-    filter: blur(11px) !important;
-}
+/* --- YOUTUBE CLEANUP (Scoped to YouTube only) --- */
+@-moz-document domain("youtube.com") {
+    .ytThumbnailViewModelHost,
+    ytd-thumbnail,
+    ytd-playlist-thumbnail,
+    .ytp-videowall-still {
+        -webkit-filter: blur(11px) !important;
+        filter: blur(11px) !important;
+    }
 
-
-/* --- REDDIT NUKER --- */
-shreddit-feed, 
-#main-content, 
-.ListingLayout-outerContainer, 
-#siteTable {
-    display: none !important;
-}
-
-
-/* --- YOUTUBE CLEANUP & SHORTS --- */
-ytd-guide-entry-renderer:has(a[title="Shorts"]),
-ytd-mini-guide-entry-renderer[aria-label="Shorts"],
-ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
-ytd-reel-shelf-renderer,
-ytd-item-section-renderer:has(ytd-reel-shelf-renderer) {
-    display: none !important;
+    ytd-guide-entry-renderer:has(a[title="Shorts"]),
+    ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+    ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+    ytd-reel-shelf-renderer,
+    ytd-item-section-renderer:has(ytd-reel-shelf-renderer) {
+        display: none !important;
+    }
 }
