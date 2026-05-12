@@ -1,11 +1,11 @@
-# Safari-with-No-Distractions
-I decided to make this ".css" sheet style. I only tried it on safari and it saves me lots of time and keeps me away from watching videos that are just waste of time. Hopeth it will wake something up from thy inside
+# Safari-with-No-Distractions ✧( ु•⌄• )◞
+I decided to make this ".css" sheet style. I only tried it on safari and it saves me lots of time and keeps me away from watching videos that are just waste of time. Hopeth it will wake something u[...] ( ˘▽˘)っ
 
-# Installation Process
+# Installation Process (⌐■_■)
 
 - Open Safari
 - Go to Settings
 - Go to "Advanced" tab
 - Open the Style Sheet combobox and press "Other". Then you have to find direction of where did you installed "GetRidd o'Distractions.css" and select it. 
 
-After following all bullettins above Safari will run as stated above. 
+After following all bullettins above Safari will run as stated above. ＼(＾▽＾)／
