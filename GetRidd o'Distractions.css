@@ -8,6 +8,37 @@ ytd-app .ytp-videowall-still {
     filter: blur(11px) !important;
 }
 
+/* --- YOUTUBE RECOMMENDATION NUKER --- */
+
+/* Homepage recommendation feed */
+ytd-app ytd-browse[page-subtype="home"] ytd-rich-grid-renderer {
+    display: none !important;
+}
+
+/* Recommended videos beside the video player */
+ytd-app ytd-watch-next-secondary-results-renderer {
+    display: none !important;
+}
+
+/* End-screen video recommendations */
+ytd-app .ytp-ce-element,
+ytd-app .ytp-endscreen-content,
+ytd-app .ytp-videowall-still {
+    display: none !important;
+}
+
+/* Recommendation cards inside the video player */
+ytd-app .ytp-suggestion-set {
+    display: none !important;
+}
+
+/* Shorts shelves */
+ytd-app ytd-rich-shelf-renderer[is-shorts],
+ytd-app ytd-reel-shelf-renderer {
+    display: none !important;
+}
+
+
 ytd-app ytd-guide-entry-renderer:has(a[title="Shorts"]),
 ytd-app ytd-mini-guide-entry-renderer[aria-label="Shorts"],
 ytd-app ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
@@ -29,3 +60,5 @@ shreddit-app #sidebar-right,
 body.reddit-active #siteTable {
     display: none !important;
 }
+
+/* Have A wonderful day!*/
